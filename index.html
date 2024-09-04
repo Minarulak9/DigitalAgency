@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Agency</title>
-<!-- fontawesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- bootstrap cdn -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -24,7 +27,7 @@
     <nav class="navbar navbar-expand-lg fixed">
       <div class="container">
         <a class="navbar-brand p-0" href="./">
-          <img src="./assets/img/logo_transparent.png" title="DigitalAgency" alt="">
+          <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/img/logo_transparent.png" title="DigitalAgency" alt="">
           <!-- <h2>DigitalAgency</h2> -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -52,9 +55,9 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./assets/img/banner1.webp" alt="banner1">
-            <div class="text">
-              <h2>Transforming Ideas into <span class="highlight">Digital Reality</span></h2>
-              <p>At DigitalAgency, we specialize in bringing your vision to life with cutting-edge digital solutions.
+            <div class="text" >
+              <h2 data-aos="fade-up" data-aos-duration="1000">Transforming Ideas into <span class="highlight">Digital Reality</span></h2>
+              <p data-aos="fade-up" data-aos-duration="1000">At DigitalAgency, we specialize in bringing your vision to life with cutting-edge digital solutions.
                 Whether it's web design, branding, or marketing, we turn your ideas into powerful online experiences.
               </p>
             </div>
@@ -62,7 +65,7 @@
           <div class="swiper-slide">
             <img src="./assets/img/banner2.webp" alt="banner2">
             <div class="text">
-              <h2>Innovative Design, <span class="highlight">Seamless Experience</span></h2>
+              <h2> Innovative Design, <span class="highlight">Seamless Experience</span></h2>
               <p>Our team crafts stunning websites that not only look great but also provide an intuitive user
                 experience. From concept to execution, we ensure every detail is perfect.</p>
             </div>
@@ -105,7 +108,7 @@
         </div>
         <div class="col-md-4">
           <div class="img">
-            <img src="./assets/img/about1.jpg" class="img-fluid rounded shadow-sm" alt="">
+            <img src="./assets/img/about1.jpg" data-aos="fade-down-right" data-aos-once="true" data-aos-delay="300" data-aos-duration="1000" class="img-fluid rounded shadow-sm" alt="">
           </div>
           <div class="details px-md-4 mt-3">
             <div class="title light">Why Your <span class="mid">Business</span> Needs <span class="mid">Digital
@@ -116,7 +119,8 @@
               than ever. At <strong>DigitalAgency</strong>, we offer tailored solutions that help you connect with your
               audience, increase visibility, and drive growth.</p>
             <p class="para font-sm">Our services include <strong>web design</strong>, <strong>branding</strong>, and
-              <strong>digital marketing</strong>, all designed to meet your unique business needs.</p>
+              <strong>digital marketing</strong>, all designed to meet your unique business needs.
+            </p>
           </div>
         </div>
 
@@ -128,12 +132,13 @@
             <p class="para mt-1">A well-crafted design not only captures attention but also communicates your brand's
               values and message effectively. At <strong>DigitalAgency</strong>, our team specializes in creating
               <strong>innovative designs</strong> that resonate with your target audience and leave a lasting
-              impression.</p>
+              impression.
+            </p>
             <p class="para">From <strong>logos</strong> to <strong>full website designs</strong>, we ensure that every
               visual element reflects your brand's identity and vision.</p>
           </div>
           <div class="img">
-            <img src="./assets/img/about2.jpg" class="img-fluid rounded shadow-sm" alt="">
+            <img src="./assets/img/about2.jpg" data-aos="fade-up-left"  data-aos-once="true" data-aos-delay="300" data-aos-duration="1000" class="img-fluid rounded shadow-sm" alt="">
           </div>
         </div>
 
@@ -156,114 +161,116 @@
       <div class="projects mt-2">
         <!-- Tabs navs -->
         <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" data-bs-target="#ex1-tabs-1" type="button" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Web Development</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" data-bs-target="#ex1-tabs-2" type="button" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Branding & Design</button>
-            </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" data-bs-target="#ex1-tabs-1"
+              type="button" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Web Development</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" data-bs-target="#ex1-tabs-2" type="button"
+              role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Branding & Design</button>
+          </li>
         </ul>
         <!-- Tabs navs -->
-    
+
         <!-- Tabs content -->
         <div class="tab-content" id="ex1-content">
-            <!-- Web Development Tab -->
-            <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
-    
-                <div class="row mt-2 g-4">
-                    <div class="col-md-4">
-                        <div class="project-card">
-                            <a data-fslightbox="gallery" href="./assets/img/project1.png">
-                              <img src="./assets/img/project1.png" alt="" class="img-fluid">
-                            </a>
-                            <h5 class="title">Digital Agency Landing Page</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="project-card">
-                            <a data-fslightbox="gallery" href="./assets/img/project2.png">
-                              <img src="./assets/img/project2.png" alt="" class="img-fluid">
-                            </a>
-                            <h5 class="title">Painting Website Landing Page</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="project-card">
-                            <a data-fslightbox="gallery" href="./assets/img/project3.png">
-                              <img src="./assets/img/project3.png" alt="" class="img-fluid">
-                            </a>
-                            <h5 class="title">Web Agency</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="project-card">
-                            <a data-fslightbox="gallery" href="./assets/img/project4.png">
-                              <img src="./assets/img/project4.png" alt="" class="img-fluid">
-                            </a>
-                            <h5 class="title">Coca Cola Brand</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="project-card">
-                            <a data-fslightbox="gallery" href="./assets/img/project5.png">
-                              <img src="./assets/img/project5.png" alt="" class="img-fluid">
-                            </a>
-                            <h5 class="title">EvPoint Map</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="project-card">
-                            <a data-fslightbox="gallery" href="./assets/img/project6.png">
-                              <img src="./assets/img/project6.png" alt="" class="img-fluid">
-                            </a>
-                            <h5 class="title">Personal Portfolio</h5>
-                        </div>
-                    </div>
-                    
+          <!-- Web Development Tab -->
+          <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+
+            <div class="row mt-2 g-4">
+              <div class="col-md-4">
+                <div class="project-card">
+                  <a data-fslightbox="gallery" href="./assets/img/project1.png">
+                    <img src="./assets/img/project1.png" loading="lazy" alt="" class="img-fluid">
+                  </a>
+                  <h5 class="title">Digital Agency Landing Page</h5>
                 </div>
+              </div>
+              <div class="col-md-4">
+                <div class="project-card">
+                  <a data-fslightbox="gallery" href="./assets/img/project2.png">
+                    <img src="./assets/img/project2.png" loading="lazy" alt="" class="img-fluid">
+                  </a>
+                  <h5 class="title">Painting Website Landing Page</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="project-card">
+                  <a data-fslightbox="gallery" href="./assets/img/project3.png">
+                    <img src="./assets/img/project3.png" loading="lazy" alt="" class="img-fluid">
+                  </a>
+                  <h5 class="title">Web Agency</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="project-card">
+                  <a data-fslightbox="gallery" href="./assets/img/project4.png">
+                    <img src="./assets/img/project4.png" loading="lazy" alt="" class="img-fluid">
+                  </a>
+                  <h5 class="title">Coca Cola Brand</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="project-card">
+                  <a data-fslightbox="gallery" href="./assets/img/project5.png">
+                    <img src="./assets/img/project5.png" alt="" loading="lazy" class="img-fluid">
+                  </a>
+                  <h5 class="title">EvPoint Map</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="project-card">
+                  <a data-fslightbox="gallery" href="./assets/img/project6.png">
+                    <img src="./assets/img/project6.png" loading="lazy" alt="" class="img-fluid">
+                  </a>
+                  <h5 class="title">Personal Portfolio</h5>
+                </div>
+              </div>
+
             </div>
-    
-            <!-- Branding & Design Tab -->
-            <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
-              <div class="row mt-2 g-4">
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <a data-fslightbox="gallery" href="./assets/img/brand1.jpg">
-                          <img src="./assets/img/brand1.jpg" alt="" class="img-fluid">
-                        </a>
-                        <h5 class="title">Digital Agency Landing Page</h5>
-                    </div>
+          </div>
+
+          <!-- Branding & Design Tab -->
+          <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+            <div class="row mt-2 g-4">
+              <div class="col-md-4">
+                <div class="project-card">
+                  <a data-fslightbox="gallery" href="./assets/img/brand1.jpg">
+                    <img src="./assets/img/brand1.jpg" alt="" loading="lazy" class="img-fluid">
+                  </a>
+                  <h5 class="title">Digital Agency Landing Page</h5>
                 </div>
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <a data-fslightbox="gallery" href="./assets/img/brand2.jpg">
-                          <img src="./assets/img/brand2.jpg" alt="" class="img-fluid">
-                        </a>
-                        <h5 class="title">Painting Website Landing Page</h5>
-                    </div>
+              </div>
+              <div class="col-md-4">
+                <div class="project-card">
+                  <a data-fslightbox="gallery" href="./assets/img/brand2.jpg">
+                    <img src="./assets/img/brand2.jpg" alt="" loading="lazy" class="img-fluid">
+                  </a>
+                  <h5 class="title">Painting Website Landing Page</h5>
                 </div>
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <a data-fslightbox="gallery" href="./assets/img/brand3.jpg">
-                          <img src="./assets/img/brand3.jpg" alt="" class="img-fluid">
-                        </a>
-                        <h5 class="title">Web Agency</h5>
-                    </div>
+              </div>
+              <div class="col-md-4">
+                <div class="project-card">
+                  <a data-fslightbox="gallery" href="./assets/img/brand3.jpg">
+                    <img src="./assets/img/brand3.jpg" alt="" loading="lazy" class="img-fluid">
+                  </a>
+                  <h5 class="title">Web Agency</h5>
                 </div>
-                
-                
+              </div>
+
+
             </div>
-            </div>
+          </div>
         </div>
         <!-- Tabs content -->
-    </div>
-    
+      </div>
+
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="text-center text-lg-start text-white px-md-2">
-    
+
     <div class="container-fluid text-center text-md-start mt-5 pt-4">
       <!-- Grid row -->
       <div class="row mt-3">
@@ -273,7 +280,7 @@
           <p><i class="fas fa-home mr-3"></i> Kolkata, West Bengal</p>
           <p><i class="fas fa-envelope mr-3"></i> belug@mailinator.com</p>
           <p><i class="fas fa-phone mr-3"></i> +1 (146) 676-5696</p>
-         
+
         </div>
 
         <!-- Grid column -->
@@ -299,7 +306,8 @@
           <h6 class="text-uppercase fw-bold">Social Media</h6>
           <hr class="mb-3 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0077ff; height: 2px">
           <p>
-            <a href="https://www.facebook.com/" target="_blank" class="text-white"> <i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://www.facebook.com/" target="_blank" class="text-white"> <i class="fab fa-facebook-f"></i>
+              Facebook</a>
           </p>
           <p>
             <a href="" target="_blank" class="text-white"> <i class="fab fa-whatsapp"></i> Whatsapp</a>
@@ -311,7 +319,7 @@
             <a href="#!" target="_blank" class="text-white"><i class="fa-brands fa-x-twitter"></i> X-Twitter</a>
           </p>
         </div>
-       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold">Policy</h6>
           <hr class="mb-3 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0077ff; height: 2px">
@@ -328,7 +336,7 @@
             <a href="#!" class="text-white">Sitemap</a>
           </p>
         </div>
-       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold">Our Services</h6>
           <hr class="mb-3 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0077ff; height: 2px">
@@ -345,36 +353,40 @@
             <a href="#!" class="text-white">Digital Marketing</a>
           </p>
         </div>
-       
-        
+
+
       </div>
     </div>
-    
-  
-  <div class="text-center p-3 d-flex justify-content-around flex-wrap" style="background-color: rgba(0, 0, 0, 0.2)">
+
+
+    <div class="text-center p-3 d-flex justify-content-around flex-wrap" style="background-color: rgba(0, 0, 0, 0.2)">
       <p class="mb-0">
-          © 2024 Copyright <a class="text-white" href="./"><b>Digital Agency</b></a>
+        © 2024 Copyright <a class="text-white" href="./"><b>Digital Agency</b></a>
       </p>
       <p class="mb-0">
-          Developed <a class="text-white" target="_blank" href="https://minarulak.site"><b>Minarul Hoque</b></a>
+        Developed <a class="text-white" target="_blank" href="https://minarulak.site"><b>Minarul Hoque</b></a>
       </p>
-  </div>
-</footer>
+    </div>
+  </footer>
 
   <!-- bootstrap cdn -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script src="./assets/fslightbox.js"></script>
+  <!-- lightbox for image zoom -->
+  <script src="./assets/fslightbox.js"></script>
+  <!-- swiper js slider -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/app.js"></script>
 
   <script>
     var swiper6 = new Swiper(".banners", {
       grabCursor: true,
       effect: "creative",
-      autoplay:{
-        delay:5000,
+      autoplay: {
+        delay: 5000,
       },
       navigation: {
         nextEl: ".swiper-button-next",
@@ -391,6 +403,7 @@
         },
       }
     });
+    AOS.init();
   </script>
 </body>
 
